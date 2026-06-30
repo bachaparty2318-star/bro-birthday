@@ -185,7 +185,7 @@
             animation: bounce 2s ease-in-out infinite;
             display: inline-block;
         }
-        
+
 
         @media (max-width: 600px) {
             h1 {
@@ -199,16 +199,18 @@
                 letter-spacing: 4px;
             }
 
-            .date{
+            .date {
                 font-size: 11px;
                 letter-spacing: 3px;
             }
 
-            .cake{
+            .cake {
                 font-size: 40px;
             }
 
-            .msg, .msg2 ,.msg3 {
+            .msg,
+            .msg2,
+            .msg3 {
                 font-size: 13px;
                 padding: 18px 16px;
                 margin: 12px auto;
@@ -216,12 +218,34 @@
                 letter-spacing: 0.5px;
                 max-width: 90%;
             }
-            .msg3{
+
+            .msg3 {
                 word-break: break-word;
                 overflow-wrap: break-word;
             }
 
-            
+            #welcome #glass {
+                padding: 35px 30px !important;
+                width: 85% !important;
+            }
+
+            .welcome-name {
+                font-size: 10px;
+                letter-spacing: 6px;
+            }
+
+            .welcome-date {
+                font-size: 11px;
+                letter-spacing: 3px;
+            }
+
+            .welcome-sub {
+                font-size: 11px;
+                letter-spacing: 2px;
+                margin-top: 14px;
+            }
+
+
         }
 
         .msg:hover,
@@ -231,7 +255,7 @@
             border-color: rgba(255, 215, 0, 0.7);
         }
 
-        #welcome{
+        #welcome {
             position: fixed;
             top: 0;
             left: 0;
@@ -245,33 +269,36 @@
             cursor: pointer;
 
         }
-        #glass{
+
+        #glass {
             border: 1px solid rgba(255, 215, 0, 0.3);
             border-radius: 24px;
             padding: 60px 80px;
             text-align: center;
             background: rgba(255, 215, 0, 0.03);
             box-shadow: 0 0 60px rgba(255, 215, 0, 0.1),
-            inset 0 0 40px rgba(255, 215, 0, 0.05);
+                inset 0 0 40px rgba(255, 215, 0, 0.05);
 
             backdrop-filter: blur(10px);
         }
 
-        .welcome-date{
+        .welcome-date {
             font-size: 13px;
             letter-spacing: 6px;
             color: #555;
             text-transform: uppercase;
             margin: 0 0 16px;
         }
-        .welcome-name{
+
+        .welcome-name {
             font-size: 70px;
             letter-spacing: 12px;
             color: #FFD700;
             margin: 0;
-            animation: glowPulse 2.5s ease-in-out infinite; 
+            animation: glowPulse 2.5s ease-in-out infinite;
         }
-        .welcome-sub{
+
+        .welcome-sub {
             font-size: 13px;
             letter-spacing: 4px;
             color: #444;
@@ -286,11 +313,11 @@
     <div id="welcome">
         <div id="glass">
             <p class="welcome-date">30 june</p>
-            <h1 class="welcome-name">A Z A N</h1>
+            <h1 class="welcome-name">AZAN</h1>
             <p class="welcome-sub">Tap to open ✨</p>
         </div>
     </div>
-     
+
 
     <h1>＼(^o^)／<br>-Happy Birthday-</h1>
     <h2>B H A I</h2>
@@ -304,7 +331,8 @@
         milna meri
         khushkismati hay ma na kabhi socha bhi nai tha ka mujha itna acha dost mil sakta hay lakin phir tum ay or
         mujha
-        bohat zyada khushi hui (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ mujha aik partner mil gaya dhair sari batay karna ka liya yar aik time ho gaya
+        bohat zyada khushi hui (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ mujha aik partner mil gaya dhair sari batay karna ka liya yar aik time ho
+        gaya
         hamari
         dosti ko or ab agar tum sa kuch chupana ke koshish bhi karun na nai chupaya jata bhai you are the best ma
         na
@@ -315,32 +343,34 @@
         mohabat karo wasa to ya kaam (¬‿¬)ง tumhay bohat acha sa ata hay (〃▽〃) tum dono ke love story aik dam
         story ke tarha ho
         asi
-        mohabat ho jo dunya ma kisi na bhi na ke ho waii yar kitna pyara lago ka tum log aik sath ☆*:.｡.o(≧▽≦)o.｡.:*☆ Mashallah
+        mohabat ho jo dunya ma kisi na bhi na ke ho waii yar kitna pyara lago ka tum log aik sath ☆*:.｡.o(≧▽≦)o.｡.:*☆
+        Mashallah
         Mashallah <br> (≧∀≦)ノ
     </p>
 
-    <p class="msg3">yar aik baat dil sa bolti hun  (￫‿￩) tum ho to bohat acha insan but pata nai ku lagta hay ka tum jitna
+    <p class="msg3">yar aik baat dil sa bolti hun (￫‿￩) tum ho to bohat acha insan but pata nai ku lagta hay ka tum
+        jitna
         bahar sa khush ho na utna he andar sa uljha hua ho ma dua karti hun ka tum jitna bahar sa khush dikhta ho
         utna he andar sa bhi ho jao, a galla lag ja yara (っ◔◡◔)っ ♥ allah paak tumhari har jaiz dua kabool karay <br>
-        ameeeeeeeeeeeeeeeeeeeeeeeeen  <br>
+        ameeeeeeeeeeeeeeeeeeeeeeeeen <br>
         suma <br>
         ameeeeeeeeeeeeeeeeeeeeeeeeen
     </p>
     <script>
-       const welcome =document.getElementById('welcome'); 
-       welcome.addEventListener('click', function() {
+        const welcome = document.getElementById('welcome');
+        welcome.addEventListener('click', function () {
             const audio = new Audio('leberch-motivation-517463.mp3');
             audio.loop = true;
             audio.play();
-            
+
             welcome.style.transition = 'opacity 0.8s ease';
             welcome.style.opacity = '0';
-             setTimeout(function(){
-               welcome.style.display ='none';
+            setTimeout(function () {
+                welcome.style.display = 'none';
             }, 800);
-       });
+        });
 
-      
+
 
         for (let i = 0; i < 80; i++) {
             const star = document.createElement('div');
